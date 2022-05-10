@@ -11,6 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Mi proyecto Curso esencial de HTML y CSS " />
+<meta property="og:type" content="website" />
+<meta property="og:description" 
+  content="Todo lo que necesitas saber en tu día a día como frontend" />
+<meta property="og:url" content="https://marvaljuan.github.io/curso-esencial-html-css/" />
+<meta property="og:image" content="https://marvaljuan.github.io/curso-esencial-html-css/images/leonidas-esteban.jpg" />
     
 </head>
 <body>
@@ -140,11 +147,38 @@
                         <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
                         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
                     </ul>
-                    <h2>Modelo de caja</h2>
-                    <img src="./images/leonidas-esteban.jpg">
+                </section>
+                    <div class="section-content">
+                        <h2>Modelo de caja</h2>
+                        <div class="slider">
+                            <scroll-container class="slider-container">
+                                <scroll-page class="slider-slide" id="video-1">
+                                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ON7lHY05sqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </scroll-page>
+                                <scroll-page class="slider-slide" id="video-2">
+                                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CiaF8J9OlkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </scroll-page>
+                                <scroll-page class="slider-slide" id="video-3">
+                                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/LSgMvObH-5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </scroll-page>
+                            </scroll-container>
+                            <div class="slider-bullet-list">
+                                <a href="#video-1" class="slider-bullet"></a>
+                                <a href="#video-2" class="slider-bullet"></a>
+                                <a href="#video-3" class="slider-bullet"></a>
+                            </div>
+                        </div>
+                    </div>
                     <p>Si tienes alguna pregunta escríbeme a <a href="mailto:marvaljuan@gmail.com">marvaljuan@gmail.com</a>
                     </p>
-                </section>
+                    <div class="section-content">
+                        <h2>Ingresa a nuestro newsletter</h2>
+                        <form action="#" class="form">
+                            <input type="text" required placeholder="Nombre">
+                            <input type="email" required placeholder="Correo Electrónico">
+                            <input type="submit" value="Suscribirme">
+                        </form>
+                    </div>
             </div>
         </div>
     <main>
