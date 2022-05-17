@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El blog de Juan</title>
-    <link rel="stylesheet" href="./css/styles-logical.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/styles-nemium-d.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <meta property="og:title" content="Mi proyecto Curso esencial de HTML y CSS " />
 <meta property="og:type" content="website" />
 <meta property="og:description" 
@@ -38,14 +37,32 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+
+
+
 </head>
 <body>
     <div class="hero"></div>
     <div class="header">
         <div class="wrapper">
             <div class="header-content">
+                <h1>Curso esencial de HTML y CSS</h1>
+                <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
                 <header>
-                    <nav>
+        
+                    <nav class="variantes">
+                        <h2>Variantes del proyecto</h2>
+                        <ul>
+                            <li><a onclick="toggleTheme('./css/styles-nemium-a.css')">Nemium A</a></li>
+                            <li><a onclick="toggleTheme('./css/styles-nemium-b.css')">Nemium B</a></li>
+                            <li><a onclick="toggleTheme('./css/styles-nemium-c.css')">Nemium C</a></li>
+                            <li><a onclick="toggleTheme('./css/styles-nemium-d.css')">Nemium D</a></li>
+                            <li><a onclick="toggleTheme('./css/styles-nemium-e.css')">Nemium E</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav-list">
+                        <h2 class="nav-title">CONTENIDO</h2>
                         <details open>
                             <summary>
                                 Setup
@@ -70,9 +87,11 @@
                                 <li><a href="#css">Qué es CSS</a></li>
                             </ol>
                         </details>
+
                     </nav>
                 </header>
 
+                            
             </div>
         </div>
     </div>
@@ -81,20 +100,25 @@
             <div class="main-content">
                 <h1>Curso esencial de HTML y CSS</h1>
                 <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
-        
+                
+                <hr class="nemiumc-hr">
                 <section class="section-content">
                     <hr>
                     <h2>Setup</h2>
-                    <img src="./images/google-chrome-bg-white.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
+                    <img class="img-light" src="./images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
+                    <img class="img-dark" src="./images/google-chrome-bg-white.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
                     <h3 id="google-chrome">Google Chrome</h3>
                     <p>Chrome va a ser <strong>el navegador que utilizaremos en el curso</strong> por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
-                    <img src="./images/visual-studio-code-bg-white.png" alt="Logo del editor de código Visual Studio Code" title="Logo del editor de código Visual Studio Code">
+                    <img class="img-light" src="./images/visual-studio-code.png" alt="Logo del editor de código Visual Studio Code" title="Logo del editor de código Visual Studio Code">
+                    <img class="img-dark" src="./images/visual-studio-code-bg-white.png" alt="Logo del editor de código Visual Studio Code" title="Logo del editor de código Visual Studio Code">
                     <h3 id="vsc">Visual Studio Code</h3>
                     <p>Visual Studio Code es el <strong>de texto más popular y potente del mercado actualmente</strong>, su fácil uso y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en el que se desemvuelva.</p>
-                    <img src="./images/figma-bg-white.png" alt="Logo de Figma" title="Logo de Figma">
+                    <img class="img-light" src="./images/figma.png" alt="Logo de Figma" title="Logo de Figma">
+                    <img class="img-dark" src="./images/figma-bg-white.png" alt="Logo de Figma" title="Logo de Figma">
                     <h3 id="figma">Figma</h3>
                     <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su implementación por su <strong>fácil uso</strong> porque puede ser usado directamente desde el navegador.</p>
-                    <img src="./images/github-gray.png" alt="Logo de Github" title="Logo de Github">
+                    <img class="img-light" src="./images/github.png" alt="Logo de Github" title="Logo de Github">
+                    <img class="img-dark" src="./images/github-gray.png" alt="Logo de Github" title="Logo de Github">
                     <h3 id="github">GitHub</h3>
                     <p>Así como en Facebook encuentran tus amigos, en Github <strong>te encuentran otras programadoras y programadores</strong> de todo el mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
                     <blockquote>
@@ -102,7 +126,7 @@
                             “Este es el inicio de tu carrera como Desarrollador Web”
                         </p>
                         <p>
-                            <span>Leonidas Esteban</span>
+                            <span>- Leonidas Esteban</span>
                         </p>
                     </blockquote>
                 </section>
@@ -167,39 +191,60 @@
                         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
                     </ul>
                 </section>
-                    <div class="section-content">
-                        <h2>Modelo de caja</h2>
-                        <div class="slider">
-                            <scroll-container class="slider-container">
-                                <scroll-page class="slider-slide" id="video-1">
-                                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ON7lHY05sqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </scroll-page>
-                                <scroll-page class="slider-slide" id="video-2">
-                                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CiaF8J9OlkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </scroll-page>
-                                <scroll-page class="slider-slide" id="video-3">
-                                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/LSgMvObH-5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </scroll-page>
-                            </scroll-container>
-                            <div class="slider-bullet-list">
-                                <a href="#video-1" class="slider-bullet"></a>
-                                <a href="#video-2" class="slider-bullet"></a>
-                                <a href="#video-3" class="slider-bullet"></a>
-                            </div>
+                <section class="section-content">
+                    <h4>Modelo de caja</h4>
+                    <div class="slider">
+                        <scroll-container class="slider-container">
+                            <scroll-page class="slider-slide" id="video-1">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ON7lHY05sqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-2">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CiaF8J9OlkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-3">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/LSgMvObH-5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-list">
+                            <a href="#video-1" class="bullet-active"></a>
+                            <a href="#video-2" ></a>
+                            <a href="#video-3" ></a>
                         </div>
+                        
                     </div>
-                    <p>Si tienes alguna pregunta escríbeme a <a href="mailto:marvaljuan@gmail.com">marvaljuan@gmail.com</a>
-                    </p>
-                    <div class="section-content">
-                        <h2>Ingresa a nuestro newsletter</h2>
-                        <form action="#" class="form">
-                            <input type="text" required placeholder="Nombre">
-                            <input type="email" required placeholder="Correo Electrónico">
-                            <input type="submit" value="Suscribirme">
-                        </form>
-                    </div>
+                </section>
+                <p>Si tienes alguna pregunta escríbeme a <a class="email-link" href="mailto:marvaljuan@gmail.com">marvaljuan@gmail.com</a>
+                </p>
+                <section class="section-content">
+                    <h4>Suscríbete a nuestro newsletter</h4>
+                    <form action="#" class="form">
+                        <input type="text" required placeholder="Nombre">
+                        <input type="email" required placeholder="Correo Electrónico">
+                        <input type="submit" value="Suscribirme">
+                    </form>
+                </section>
             </div>
         </div>
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer-content">
+                    <footer>
+                        <h2>© Juan Marval 2022</h2>
+                        <div class="social-wrapper">
+                            <a href="#"><img src="./images/instagram.png" alt=""></a>
+                            <a href="#"><img src="./images/facebook.png" alt=""></a>
+                            <a href="#"><img src="./images/twitter.png" alt=""></a>
+                        </div>
+                        <div class="social-wrapper-white">
+                            <a href="#"><img src="./images/instagram-white.png" alt=""></a>
+                            <a href="#"><img src="./images/facebook-white.png" alt=""></a>
+                            <a href="#"><img src="./images/twitter-white.png" alt=""></a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
     <main>
 
 
@@ -207,16 +252,6 @@
 
 
 
-        <script>
-            const $detailsList = document.querySelectorAll('details')
-            $detailsList.forEach(($details) => {
-                $details.querySelector('summary').addEventListener('click', expand)
-            })
-            function expand() {
-                $detailsList.forEach(($details) => {
-                $details.removeAttribute('open')
-            })
-        }
-        </script>
+        
 </body>
 </html>
