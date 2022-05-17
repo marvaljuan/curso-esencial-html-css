@@ -106,9 +106,7 @@ nav ul li:nth-child(3) a{
 nav ul li:nth-child(2) a:hover{
     color: var(--white30);
 }
-/* .nav-list { 
-    display: none;
-} */
+
 .variantes {
     max-inline-size: 306px;
     margin-block-start: 64px;
